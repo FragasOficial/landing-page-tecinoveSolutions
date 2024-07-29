@@ -5,14 +5,17 @@
     font-weight: 400;
     font-style: normal;
     margin: auto;
-    background-color: transparent;
+    /* background-color: black; */
 }
 
 header{
+    
     text-align: center;
-    background-color: #c219ab;
 }
 
+img{
+    max-width: 100vw;
+}
 .firts-block{
     background-color: black;
 
@@ -25,15 +28,26 @@ header{
     color: #c219ab;
 }
 
-.firts-block video{
-    width: 25rem;
+#space-sections{
+    margin-bottom: 3rem;
 }
 
-.firts-block-video button{
-    color: white;
-    background-color: #c219ab;
-    font-size: 1.2rem;
 
+.second-block{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #c219ab;
+   margin-top: 3rem;
+}
+
+.header-two{
+    background-color: #c219ab;
+}
+
+.vantagens{
+    color: white;
+    background-color: transparent;
 }
 
 main{
@@ -41,7 +55,29 @@ main{
 }
 
 h1{
-    font-size: x-large;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    font-weight: 700;
     text-transform: uppercase;
     color: white;
+}
+
+video{
+    width: 600px;
+}
+
+.cta{
+    color: white;
+    background-color: #c219ab;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-items: center;
+    padding: 1rem;
+    border: transparent solid 0.5rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
 }
