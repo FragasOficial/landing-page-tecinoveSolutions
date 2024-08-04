@@ -22,6 +22,11 @@ img{
     background-color: black;
 }
 
+iframe{
+    width: 600px;
+    height: 315px;
+}
+
 .firts-block-video{
     display: flex;
     flex-direction: column;
@@ -146,6 +151,16 @@ video{
 }
 
 /* Media queries para dispositivos móveis */
+@media (min-width: 100px){
+
+    img{
+        height: 40vw;
+    }
+
+    iframe{
+        max-width: 100%;
+    }
+}
 @media (min-width: 600px) {
     .second-block-items {
         flex-direction: row;
