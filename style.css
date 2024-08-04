@@ -154,6 +154,10 @@ video {
         flex-direction: row;
     }
 
+    .firts-block-video {
+        flex-direction: row;
+    }
+
     .group-one, .group-two {
         width: 50%;
     }
