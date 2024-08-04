@@ -151,6 +151,7 @@ video {
 /* Media Queries */
 @media (max-width: 600px) {
     .second-block-items {
+        
         flex-direction: row;
     }
 
@@ -159,12 +160,17 @@ video {
         flex-direction: column;
     }
 
+    iframe{
+        max-width: 100%;
+    }
+
     .group-one, .group-two {
         width: 50%;
     }
 
     .cta {
         font-size: 2rem;
+        width: 100%;
     }
 
     h1 {
