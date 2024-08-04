@@ -1,6 +1,3 @@
-Para tornar o código CSS responsivo para telas de celulares e tablets, você pode usar media queries para ajustar o layout com base no tamanho da tela. Aqui está uma versão do seu código com as media queries adicionadas:
-
-```css
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
@@ -16,6 +13,7 @@ header{
 
 img{
     max-width: 100vw;
+    height: 25vw;
 }
 
 .firts-block{
@@ -131,8 +129,8 @@ video{
     margin-top: 1rem;
 }
 
-.align{
-    margin-left: 0; /* Mudança para layout responsivo */
+#align{
+    display: flex;
     align-items: center;
 }
 
@@ -151,10 +149,18 @@ video{
 }
 
 /* Media queries para dispositivos móveis */
-@media (min-width: 100px){
+@media (max-width: 599.9px){
 
-    img{
-        height: 40vw;
+    /* img{
+        height: 35vw;
+    } */
+
+    h1{
+        font-size: 100%;
+    }
+
+    .vantagens{
+        text-align: inherit;
     }
 
     iframe{
@@ -193,5 +199,53 @@ video{
     .cta {
         font-size: 1.2rem;
         padding: 0.5rem;
+    }
+}
+
+/*Whats app flutuante
+/* Estilo para o botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 3.75rem;
+    height: 3.75rem;
+    bottom: 2.5rem;
+    right: 1.5rem;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 3.125rem;
+    text-align: center;
+    font-size: 1.875px;
+    box-shadow: 0.125rem 0.125rem 0.188rem #999;
+    z-index: 100;
+}
+
+.whatsapp-float img {
+    margin-top: 0.25rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.whatsapp-float:hover {
+    background-color: #128c7e;
+    transition: background-color 0.3s;
+}
+
+.img-whats{
+    border: 0.01 transparent beige;
+    border-radius: 60rem;
+}
+
+/* Media queries para ajustar o botão em dispositivos móveis */
+@media (max-width: 599.9px) {
+    .whatsapp-float {
+        width: 3.125rem;
+        height: 3.125rem;
+        bottom: 1.25rem;
+        right: 1.25rem;
+    }
+
+    .whatsapp-float img {
+        width: 3.1rem;
+        height: 3.1rem;
     }
 }
