@@ -149,13 +149,14 @@ video {
 }
 
 /* Media Queries */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
     .second-block-items {
         flex-direction: row;
     }
 
     .firts-block-video {
-        flex-direction: row;
+        display: block;
+        flex-direction: column;
     }
 
     .group-one, .group-two {
