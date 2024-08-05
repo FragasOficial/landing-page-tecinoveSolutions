@@ -5,6 +5,7 @@
     font-weight: 400;
     font-style: normal;
     margin: auto;
+    background-color: black;
 }
 
 header{
@@ -30,11 +31,16 @@ span{
     font-weight: bold;
     display: flex;
     align-items: center;
+    /* background-color: white;
+    color: black; */
 }
 
 .joinha-pink{
     height: 3.5vw;
     margin-right: 1rem;
+    border: 0.01rem transparent white;
+    border-radius: 60rem;
+    background-color: white;
 }
 
 .firts-block-video{
@@ -47,11 +53,9 @@ span{
 #space-sections{
     color: #c219ab;
     background-color: white;
-    /* padding: 3rem; */
 }
 
 .second-block-items{
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: column; /* Mudança para layout responsivo */
     text-align: start;
@@ -72,12 +76,11 @@ span{
 }
 
 .group-one, .group-two{
-    background-color: white;
-    /* padding-left: 0.6rem; */
+    color: black
 }
 
 .headers-two{
-    color: #c219ab;
+    color: white;
     text-align: center;
     align-items: center;
 }
@@ -102,7 +105,7 @@ span{
     padding: 1rem 1.5rem;
     font-size: 1.2rem;
     line-height: 1.5rem;
-    color: black;
+    color: white;
     background-color: transparent;
 }
 
@@ -121,7 +124,7 @@ h1{
     width: 100%; /* Mudança para layout responsivo */
     font-weight: 700;
     text-transform: uppercase;
-    color: rgba(177, 9, 59, 0.904);
+    color: white;
 }
 
 video{
@@ -144,21 +147,91 @@ video{
 #align{
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
-}
-
-.config-footer{
-    align-items: center;
-    height: 10rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
     background-color: black;
 }
 
-.align-footer{
-    padding-top: 3.7rem;
+/* .config-footer{
+    align-items: center;
+    height: 10rem;
+    
+} */
+
+#align-footer{
+    margin-top: 3rem;
+    padding: 3.7rem 0.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: white;    
+    color: white; 
+    border: white solid 0.1rem;  
+}
+
+#back-second-call{
+    padding-top: 2re;
+}
+
+#second-call{
+    /* background-color: yellow; */
+    /* color: black; */
+}
+
+#second-call:hover{
+    /* background-color: orange;
+    color: black; */
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* button:hover{
+    background-color: white;
+    color: #c91f7d;
+    border: grey solid 0.01rem;
+} */
+
+.third-block{
+    text-align: left;
+    align-items: center;
+    color: white;
+    /* width: 80%; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#foto-fragas{
+    width: 30rem;
+}
+
+.autoridade{
+    margin-top: 2rem;
+    gap: 1rem;
+    display: flex;
+}
+
+ul{
+    line-height: 2rem;
+}
+
+li{
+    font-size: 1.5rem;
+
+}
+
+p{
+    background-color: rgba(12, 10, 10, 0.568);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 
 /* Media queries para dispositivos móveis */
